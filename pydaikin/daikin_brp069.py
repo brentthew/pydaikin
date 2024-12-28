@@ -150,7 +150,7 @@ class DaikinBRP069(Appliance):
         if self.support_energy_consumption:
             self.__dict__["INFO_RESOURCES"] = list(set(self.INFO_RESOURCES + [  # pylint: disable=invalid-name
             #    'aircon/get_day_power_ex',
-                'aircon/get_week_power',
+        #        'aircon/get_week_power',
             ]))
 
     async def _update_settings(self, settings):
